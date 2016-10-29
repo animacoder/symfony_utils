@@ -19,13 +19,6 @@ class Utils
         $d = \DateTime::createFromFormat($format, $date);
         return $d && $d->format($format) == $date;
 
-        /**
-         *  KULLANIM ŞEKLİ
-         *  if ($this->validateDate($dueDate) == true) {
-                $todo->setDueDate(\DateTime::createFromFormat('d-m-Y', $dueDate));
-            }
-         */
-
     }
 
     public function fileUpload($file, $file_type, $file_size, $file_error, $temp, $upload_url)
@@ -148,7 +141,6 @@ class Utils
         //ini_set('display_errors', 'On');
         //error_reporting(E_ALL);
 
-        //$deviceToken = '0ff48c523f7602aea065007962362608fa725f8a2081f1eea7d6b57f7c081e12';
         $passphrase = '123456';
         //$message = 'my push notification';
         $ctx = stream_context_create();
@@ -201,7 +193,7 @@ class Utils
         );
         $headers = array
         (
-            'Authorization: key=' . 'AIzaSyD5E6Zkg1r6ePkG5izt6636k5wFIT87V1Q',
+            'Authorization: key=' . '',
             'Content-Type: application/json'
         );
 
